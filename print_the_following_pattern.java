@@ -5,11 +5,14 @@ class Sum
    {
        Scanner s=new Scanner(System.in);
        int n=s.nextInt();
-       for(int i=n;i>=1;i--)
+       for(int i=1;i<=n;i++)
        {
-           for(int j=n;j>=1;j--)
+           for(int j=1;j<=n;j++)
            {
-               System.out.print(j+" ");
+               if(i==j)
+               System.out.print("0");
+               else
+               System.out.print("x");
            }
            System.out.println();
        }
